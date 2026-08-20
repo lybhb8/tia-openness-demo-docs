@@ -2,7 +2,7 @@
 
 ## 6.1 概述
 
-在开发“TIAPortalOpennessDemo”应用程序时，采用了模型-视图-视图模型（MVVM）架构模式。 参见图 6-1 和图 6-8。因此，该解决方案由多个项目组成，这些项目按不同区域进行组织（参见图 6-9）。此设计旨在进一步简化您开发自己的 Openness 应用程序的入门过程。关于各个区域和项目的描述，请参见表 6-4。
+在开发“TIAPortalOpennessDemo”应用程序时，采用了模型-视图-视图模型（MVVM）架构模式。 参见图 6-1 和图 6-8。因此，该解决方案由多个项目组成，这些项目按不同区域进行组织（参见图 6-9）。此设计旨在进一步简化您开发自己的 Openness 应用程序的入门过程。关于各个区域和项目的描述，请参见[表 6-4](#table-6-4)。
 
 !!! note
     为了向您展示如何简化针对不同版本的 Openness 应用程序的开发流程，我们开发了这款演示应用程序，使其能够仅通过一个解决方案和一个应用程序，即可开发并支持多个版本的 Siemens.Engineering.dll 以及 Openness API。
@@ -13,8 +13,7 @@
 
 
 图 6-1
-
-![](images/7f56a7bd4221ff0813006bb16c33719be65b8826ab732f58cb6c1ac1e794cad9.jpg)
+![](images/7f56a7bd4221ff0813006bb16c33719be65b8826ab732f58cb6c1ac1e794cad9.jpg){ #fig-6-1 }
 呈现与呈现逻辑
 
 为了向您展示如何简化针对不同版本的 Openness 应用程序的开发流程，我们开发了这款演示应用程序，使其能够仅通过一个解决方案和一个应用程序，即可开发并支持多个版本的 Siemens.Engineering.dll 以及 Openness API。
@@ -24,8 +23,7 @@
 
 关于此情况应如何处理，请参阅表6-4第4项中的说明。
 图6-2
-
-![](images/0c2b0d6a9feab3ecf9e1dec2fe6fcd4d6b7170a86ef1a8e10afa0579a02bf831.jpg)
+![](images/0c2b0d6a9feab3ecf9e1dec2fe6fcd4d6b7170a86ef1a8e10afa0579a02bf831.jpg){ #fig-6-2 }
 
 ## 6.2 配置解决方案
 
@@ -48,8 +46,7 @@
 ### 6.2.1 卸载项目
 
 图6-3
-
-![](images/06ec617b45150aba8057f4d6faad78e5e839ec26802b03d78a19603070b1f67c.jpg)
+![](images/06ec617b45150aba8057f4d6faad78e5e839ec26802b03d78a19603070b1f67c.jpg){ #fig-6-3 }
 
 表 6-1
 
@@ -58,8 +55,7 @@
 ### 6.2.2 重新加载项目
 
 图6-4
-
-![](images/78a7410f5b6e8095924f6a8208571b95edd4f26db1cd9750cdab4c5f3da3702e.jpg)
+![](images/78a7410f5b6e8095924f6a8208571b95edd4f26db1cd9750cdab4c5f3da3702e.jpg){ #fig-6-4 }
 
 表 6-2
 
@@ -84,14 +80,12 @@
 • WinCcUnified – 服务 – V…
 
 图6-5
-
-![alt text](images/image-11.png)
+![alt text](images/image-11.png){ #fig-6-5 }
 
 ### 6.2.4 将项目文件夹添加到项目中
 
 图6-6
-
-![](images/1265b705a6335bed38445c03c81aa717475eaed95563a3e3d072c43fd76a60d4.jpg)
+![](images/1265b705a6335bed38445c03c81aa717475eaed95563a3e3d072c43fd76a60d4.jpg){ #fig-6-6 }
 
 表 6-3
 
@@ -100,8 +94,7 @@
 ![](images/ff7df845beceedb50b787b3152d299626e65f040a640ce83dcf51ac261aad974.jpg)
 
 图 6-8
-
-![](images/9c7eba53a9c9e76b96ffccd9c53dd1491baae8fde02d2fe11f133ca7ad533d8a.jpg)
+![](images/9c7eba53a9c9e76b96ffccd9c53dd1491baae8fde02d2fe11f133ca7ad533d8a.jpg){ #fig-6-8 }
 
 概述了 TIAPortalOpennessDemo 应用程序中使用的主要命名空间和类型。
 
@@ -118,7 +111,7 @@
 
 
 表 6-4
-![alt text](images/image-13.png)
+![alt text](images/image-13.png){ #table-6-4 }
 
 
 ![alt text](images/image-14.png)
@@ -132,7 +125,7 @@
 
 ## 6.3 程序集解析
 
-启动应用程序时，您必须选择要使用的 TIA Portal 和 TIA Portal Openness 的版本（参见图 6-10）。 如果您仅使用一个版本，可以勾选“不再显示此窗口”选项。下次启动应用程序时，所选版本将自动加载。点击“确认”以确认您的选择。
+启动应用程序时，您必须选择要使用的 TIA Portal 和 TIA Portal Openness 的版本（参见[图 6-10](#fig-6-10)）。 如果您仅使用一个版本，可以勾选“不再显示此窗口”选项。下次启动应用程序时，所选版本将自动加载。点击“确认”以确认您的选择。
 
 如果您勾选了“不再显示此窗口”复选框，但希望稍后重置该选项以便再次选择版本，可以通过“设置”进行操作（参见“设置”）。
 
@@ -142,8 +135,7 @@
 
 
 图 6-10
-
-![](images/6-10.jpg)
+![](images/6-10.jpg){ #fig-6-10 }
 
 
 ## 6.4 预选模块
@@ -168,12 +160,11 @@
 应用程序的主视图分为多个窗格。这些窗格在侧边面板中以显示或可选地隐藏有关 TIA Portal 实例以及项目/全局库的信息。单击内容窗格会自动隐藏侧边面板。
 
 图 6-11
-
-![](images/6-12.jpg)
+![](images/6-12.jpg){ #fig-6-11 }
 
 表 6-6
 
-| 编号 | 说明 |
+| 编号 | 说明 |{ #table-6-6 }
 |------|------|
 | 1. | 按主题分组的应用程序菜单。 |
 | 2. | 直接访问关键功能的工具栏。 |
@@ -186,12 +177,11 @@
 ## 6.6 "TIA Portal" 侧边面板
 
 图 6-12
-
-![](images/6-13.jpg)
+![](images/6-13.jpg){ #fig-6-12 }
 
 表 6-7
 
-| 编号 | 说明 |
+| 编号 | 说明 |{ #table-6-7 }
 |------|------|
 | 1. | 应用程序连接到的 TIA Portal 实例的进程 ID。 |
 | 2. | 可以通过此按钮与列表中高亮显示的实例建立连接（参见第 3 项）。 |
@@ -202,12 +192,11 @@
 ### 6.7.1 项目库
 
 图 6-14
-
-![alt text](images/image-17.png)
+![alt text](images/image-17.png){ #fig-6-14 }
 
 表 6-8
 
-| 编号 | 说明 |
+| 编号 | 说明 |{ #table-6-8 }
 |------|------|
 | 1. | 为树中高亮显示的组创建新的子组（参见第 5 项）（参见创建或编辑组）。 |
 | 2. | 编辑树中高亮显示的组的名称（参见第 5 项）（参见创建或编辑组）。 |
@@ -218,12 +207,11 @@
 #### 6.7.1.1 创建或编辑组
 
 图 6-15
-
-![alt text](images/image-18.png)
+![alt text](images/image-18.png){ #fig-6-15 }
 
 表 6-9
 
-| 编号 | 说明 |
+| 编号 | 说明 |{ #table-6-9 }
 |------|------|
 | 1. | 为树中高亮显示的组创建新的子组。 |
 | 2. | 编辑树中高亮显示的组的名称。 |
@@ -235,12 +223,11 @@
 #### 6.7.1.2 将类型版本从项目库复制到项目
 
 图 6-16
-
-![alt text](images/image-19.png)
+![alt text](images/image-19.png){ #fig-6-16 }
 
 表 6-10
 
-| 编号 | 说明 |
+| 编号 | 说明 |{ #table-6-10 }
 |------|------|
 | 1. | 显示复制类型版本的对话框。 |
 | 2. | 树中高亮显示的、要复制的类型版本。可能的复制目标在 project tree 中自动标记为绿色。 |
@@ -253,12 +240,11 @@
 #### 6.7.1.3 导出类型版本
 
 图 6-17
-
-![alt text](images/image-20.png)
+![alt text](images/image-20.png){ #fig-6-17 }
 
 表 6-11
 
-| 编号 | 说明 |
+| 编号 | 说明 |{ #table-6-11 }
 |------|------|
 | 1. | 树中高亮显示的、要导出的类型版本。 |
 | 2. | 启动复制操作，并在设置中设置为"导出路径"的目录中生成以类型版本名称命名的导出文件（参见设置）。 |
@@ -266,12 +252,11 @@
 ### 6.7.2 全局库
 
 图 6-18
-
-![alt text](images/image-21.png)
+![alt text](images/image-21.png){ #fig-6-18 }
 
 表 6-12
 
-| 编号 | 说明 |
+| 编号 | 说明 |{ #table-6-12 }
 |------|------|
 | 1. | 创建新的全局用户定义库。 |
 | 2. | 打开全局用户定义库。 |
@@ -283,12 +268,11 @@
 
 
 图 6-19
-
-![alt text](images/image-22.png)
+![alt text](images/image-22.png){ #fig-6-19 }
 
 表 6-13
 
-| 编号 | 说明 |
+| 编号 | 说明 |{ #table-6-13 }
 |------|------|
 | 1. | 要创建的新全局用户定义库的名称。 |
 | 2. | 保存新库的路径（参见设置）。 |
@@ -302,8 +286,7 @@
 您可以在"文件"菜单中使用"打开 TIA Portal"来打开新的 TIA Portal 实例。
 
 图 6-20
-
-![alt text](images/image-23.png)
+![alt text](images/image-23.png){ #fig-6-20 }
 
 
 ### 6.8.1 打开 TIA Portal
@@ -329,12 +312,10 @@ ITiaPortalServiceProvider;
 ### 6.8.3 连接 TIA Portal
 
 图 6-21
-
-![alt text](images/image-24.png)
+![alt text](images/image-24.png){ #fig-6-21 }
 
 图 6-22
-
-![alt text](images/image-25.png)
+![alt text](images/image-25.png){ #fig-6-22 }
 
 "文件"菜单中的"连接 TIA Portal"或"连接 TIA Portal"按钮（参见图 6-21，第 2 项）可以与现有的 TIA Portal 实例建立连接。此实例中打开的项目将自动加载并打开用于编辑。为此，从所有运行进程的列表中选择实例（参见图 6-21，第 1 项），然后单击"连接 TIA Portal"按钮（参见图 6-21，第 2 项）。与 TIA Portal Openness Demo 应用程序连接的实例的进程 ID（参见图 6-22，第 1 项）将显示在"当前进程 ID:"字段中（参见图 6-22，第 2 项）。
 
@@ -394,8 +375,7 @@ var localSession = TiaPortal.LocalSessions.FirstOrDefault(); localSession?.Close
 在”文件”菜单中单击”创建项目”以创建一个新项目。为此，您必须输入项目名称以及项目将被创建和保存的目标文件夹（参见图 6-23）。
 
 图6-23
-
-![alt text](images/image-26.png)
+![alt text](images/image-26.png){ #fig-6-23 }
 
 
 表 6-14
@@ -416,8 +396,7 @@ BaseProjectViewModel: ProjectServiceProvider = \_moduleProvider.GetService(typeo
 通过服务实例（参见“创建项目”），调用 OpenProjectAsync(string projectPath) 方法。该方法使用 API 调用 Project newProject = tiaPortal.Projects.Open(new FileInfo(projectPath)); 来打开作为参数传递的所选项目。
 
 图 6-24
-
-![](images/364d11c979faa89db86ab556c5ea8d17d9240139a834fd46d3c87f729a503ff5.jpg)
+![](images/364d11c979faa89db86ab556c5ea8d17d9240139a834fd46d3c87f729a503ff5.jpg){ #fig-6-24 }
 
 ### 6.8.10 保存项目
 
@@ -438,8 +417,7 @@ BaseProjectViewModel: ProjectServiceProvider = \_moduleProvider.GetService(typeo
 ## 6.9 “视图”菜单
 
 图 6-25
-
-![alt text](images/image-27.png)
+![alt text](images/image-27.png){ #fig-6-25 }
 
 通过“视图”菜单，您可以切换项目中的逻辑树结构和物理树结构。参见图 6-26 和图 6-27。
 
@@ -473,22 +451,18 @@ BaseProjectViewModel: ProjectServiceProvider = \_moduleProvider.GetService(typeo
 
 这里有一个例外，即“设备组”，因为它没有导轨或机架。因此，使用设备名称作为额外的分组依据。
 
-逻辑树结构将所有设备按机架或机柜进行分类。所有未插电的设备均与机架或机柜位于同一层级（参见图6-26中的红色方框）。
+逻辑树结构将所有设备按机架或机柜进行分类。所有未插电的设备均与机架或机柜位于同一层级（参见图 6-26中的红色方框）。
 图6-26
-
-![](images/9f591dab3b2a9099affbf035aa7aaf7e2331e0f4a8e4947083046addfa378470.jpg)
+![](images/9f591dab3b2a9099affbf035aa7aaf7e2331e0f4a8e4947083046addfa378470.jpg){ #fig-6-26 }
 
 ### 6.9.2 物理视图
 
-在物理树结构中，所有设备都位于一个站点的下方；在此，一条轨道及其上的所有设备（包括未连接的设备）位于同一层级。有关哪些设备已断开连接、哪些未断开连接的信息，请参阅属性视图（参见图 6-28）。
+在物理树结构中，所有设备都位于一个站点的下方；在此，一条轨道及其上的所有设备（包括未连接的设备）位于同一层级。有关哪些设备已断开连接、哪些未断开连接的信息，请参阅属性视图（参见[图 6-28](#fig-6-28)）。
 
 图6-27
+![](images/6-27.jpg){ #fig-6-27 }
 
-
-
-![](images/6-27.jpg)
-
-![](images/6-28.jpg)
+![](images/6-28.jpg){ #fig-6-28 }
 
 物理项目树
 
@@ -498,19 +472,17 @@ BaseProjectViewModel: ProjectServiceProvider = \_moduleProvider.GetService(typeo
 在此菜单中，您可以找到可在项目级别或项目项上运行的功能。
 
 图6-29
-
-![alt text](images/image-29.png)
+![alt text](images/image-29.png){ #fig-6-29 }
 
 
 ### 6.10.1 创建新组
 
 图6-30
-
-![alt text](images/image-28.png)
+![alt text](images/image-28.png){ #fig-6-30 }
 
 表 6-15
 
-| 编号 | 说明 |
+| 编号 | 说明 |{ #table-6-15 }
 |------|------|
 | 1. | 在项目树中高亮显示、将为其创建新子组的元素。 |
 | 2. | 新组的名称。 |
@@ -552,8 +524,7 @@ if (parentProjectItem != null)
 
 
 图6-31
-
-![](images/6-31.jpg)
+![](images/6-31.jpg){ #fig-6-31 }
 
 #### 6.10.2.1 打开编辑器
 
@@ -597,7 +568,7 @@ if (projectItem != null)
 
 #### 6.10.2.2 拓扑视图
 
-"项目 -> TIA Portal 编辑器"菜单中的"拓扑视图"让您可以打开 TIA Portal 中项目的拓扑视图（参见图 6-32）。
+"项目 -> TIA Portal 编辑器"菜单中的"拓扑视图"让您可以打开 TIA Portal 中项目的拓扑视图（参见[图 6-32](#fig-6-32)）。
 
 根据序列图（参见图 6-7），通过 ModuleProvider 在类 BaseProjectViewModel 的方法 InitProjectServiceProvider 中加载服务实例：
 
@@ -618,12 +589,11 @@ CurrentProject.ShowHwEditor(viewType);
 
 
 图6-32
-
-![](images/6-32.jpg)
+![](images/6-32.jpg){ #fig-6-32 }
 
 #### 6.10.2.3 网络视图
 
-"项目 -> TIA Portal 编辑器"菜单中的"网络视图"让您可以打开 TIA Portal 中项目的网络视图（参见图 6-33）。
+"项目 -> TIA Portal 编辑器"菜单中的"网络视图"让您可以打开 TIA Portal 中项目的网络视图（参见[图 6-33](#fig-6-33)）。
 
 根据序列图（参见图 6-7），通过 ModuleProvider 在类 BaseProjectViewModel 的方法 InitProjectServiceProvider 中加载服务实例：
 
@@ -643,16 +613,14 @@ CurrentProject.ShowHwEditor(viewType);
 ```
 
 图6-33
-
-![](images/6-33.jpg)
+![](images/6-33.jpg){ #fig-6-33 }
 
 ### 6.10.3 编译
 
 图6-34
+![](images/6-34.jpg){ #fig-6-34 }
 
-![](images/6-34.jpg)
-
-编译项目树中高亮显示的元素，只要该对象实现了接口 ICompilable（参见图 6-34）。
+编译项目树中高亮显示的元素，只要该对象实现了接口 ICompilable（参见[图 6-34](#fig-6-34)）。
 
 根据序列图（参见图 6-7），通过 ModuleProvider 在类 BaseProjectViewModel 的方法 InitProjectServiceProvider 中加载服务实例：
 
@@ -699,8 +667,7 @@ if (projectItem != null)
 ### 6.10.4 "导入/导出" 子菜单
 
 图6-35
-
-![](images/6-35.jpg)
+![](images/6-35.jpg){ #fig-6-35 }
 
 #### 6.10.4.1 CAx 导入
 
@@ -708,13 +675,12 @@ CAx 导入用于以 AML 格式导入设备数据。支持以下导入选项。
 
 
 图6-36
-
-![alt text](images/image-30.png)
+![alt text](images/image-30.png){ #fig-6-36 }
 
 
 表 6-16
 
-| 编号 | 说明 |
+| 编号 | 说明 |{ #table-6-16 }
 |------|------|
 | 1. | 如果在导入 CAx 数据时发生名称冲突，则名称冲突的设备 CAx 数据将被放置在占位符文件夹中。 |
 | 2. | 如果在导入 CAx 数据时发生名称冲突，则名称冲突设备的 CAx 数据将在 TIA Portal 项目中被导入的 CAx 数据覆盖。 |
@@ -737,8 +703,7 @@ if (CurrentProject != null)
 
 
 图6-37
-
-![](images/6-37.jpg)
+![](images/6-37.jpg){ #fig-6-37 }
 
 CAx 导出以 AML 格式导出设备数据。CAx 导出在项目级别或设备级别都是可能的。
 
@@ -762,18 +727,17 @@ if (CurrentProject != null)
 
 表 6-17
 
-| 编号 | 说明 |
+| 编号 | 说明 |{ #table-6-17 }
 |------|------|
 | 1. | 将导入元素的区域高亮显示。 |
-| 2. | 通过工具栏或菜单"项目 > 导入/导出 > 将元素导入为 SimaticML"运行"导入元素"功能（参见图 6-39）。 |
+| 2. | 通过工具栏或菜单"项目 > 导入/导出 > 将元素导入为 SimaticML"运行"导入元素"功能（参见[图 6-39](#fig-6-39)）。 |
 | 3. | 选择要导入的 XML 数据。 |
 | 4. | 确认导入数据并调用函数。 |
 
 
 图6-38
 图6-39
-
-![](images/6-39.jpg)
+![](images/6-39.jpg){ #fig-6-39 }
 
 根据序列图（参见图 6-7），通过 ModuleProvider 在类 BaseProjectViewModel 的方法 InitProjectServiceProvider 中加载服务实例：
 
@@ -798,22 +762,19 @@ LogicalTreeView);
 
 表 6-18
 
-| 编号 | 说明 |
+| 编号 | 说明 |{ #table-6-18 }
 |------|------|
 | 1. | 将导入下级结构的区域高亮显示。 |
-| 2. | 启动"将结构导入为 SimaticML"功能首先打开选择对话框，您可以在其中选择要作为下级结构导入的文件夹（参见图 6-41）。所有子文件夹及其中的类型将一起导入。 |
+| 2. | 启动"将结构导入为 SimaticML"功能首先打开选择对话框，您可以在其中选择要作为下级结构导入的文件夹（参见[图 6-41](#fig-6-41)）。所有子文件夹及其中的类型将一起导入。 |
 
 !!! note
-    请注意，选定的导入目录本身（参见图 6-41）作为根目录不会被导入。仅导入选定目录中的所有子文件夹。
+    请注意，选定的导入目录本身（参见[图 6-41](#fig-6-41)）作为根目录不会被导入。仅导入选定目录中的所有子文件夹。
 
 
 
 图6-40
 图6-41
-
-
-
-![](images/6-41.jpg)
+![](images/6-41.jpg){ #fig-6-41 }
 
 ![](images/6-42.jpg)
 
@@ -872,12 +833,11 @@ using (var exclusiveAccess = tiaPortal?.ExclusiveAccess("Import element"))
 
 
 图6-43
-
-![alt text](images/image-33.png)
+![alt text](images/image-33.png){ #fig-6-43 }
 
 表 6-19
 
-| 编号 | 说明 |
+| 编号 | 说明 |{ #table-6-19 }
 |------|------|
 | 1. | 将作为结构导出的区域高亮显示。 |
 | 2. | 通过菜单"项目 > 导入/导出 > 将结构导出为 SimaticML"或工具栏启动导出。 |
@@ -904,10 +864,7 @@ ProjectServiceProvider.ExportStructureAsync((string)SelectedItem.Header, (Guid)S
 
 
 图6-44
-
-
-
-![](images/6-44.jpg)
+![](images/6-44.jpg){ #fig-6-44 }
 
 ![](images/6-45.jpg)
 
@@ -919,7 +876,7 @@ _moduleProvider.GetService(typeof(IProjectServiceProvider)) as
 IProjectServiceProvider;
 ```
 
-在 BaseProjectViewModel 类中，调用方法 AddExternalSource，其中在服务实例上执行调用 ProjectServiceProvider.AddExternalSourceAsync(fileInfos, (string)SelectedItem.Header, (Guid)SelectedItem.Tag, LogicalTreeView);。所选文件的 FileInfo、高亮显示的元素的名称（参见图 6-44）和选定元素的 GUID 作为参数传递。调用中的第四个参数表示我们正在处理逻辑项目树，并且项目项应在其中找到。
+在 BaseProjectViewModel 类中，调用方法 AddExternalSource，其中在服务实例上执行调用 ProjectServiceProvider.AddExternalSourceAsync(fileInfos, (string)SelectedItem.Header, (Guid)SelectedItem.Tag, LogicalTreeView);。所选文件的 FileInfo、高亮显示的元素的名称（参见[图 6-44](#fig-6-44)）和选定元素的 GUID 作为参数传递。调用中的第四个参数表示我们正在处理逻辑项目树，并且项目项应在其中找到。
 
 GetProjectItem(header, tag, logical) 从相应的树视图（逻辑或物理视图）加载项目项。对于 TiaPortal 实例，请求独占访问操作 tiaPortal?.ExclusiveAccess("Import element")。
 
@@ -996,6 +953,8 @@ if (projectItem != null)
 |------|------|
 | 1. | 类型为"外部源文件"的高亮显示项目项，将从中生成块。例如，外部源 DB_Engine 包含一个类型和一个数据块。 |
 
+{ #table-6-20 }
+
 ```text
 TYPE "Motor"
 VERSION : 0.1
@@ -1026,18 +985,17 @@ END_DATA_BLOCK
 
 图6-46
 图6-47
-
-![alt text](images/image-35.png)
+![alt text](images/image-35.png){ #fig-6-47 }
 
 目标块是从源文件生成的（另参见图 6-47，第 1 项）。外部源中的类型（参见表 6-20，第 1 项）被分配给相应的区域（参见图 6-47，第 2 和第 3 项）。
 
 ### 6.11.3 从块生成源
 
-![](images/6-48.jpg)
+![](images/6-48.jpg){ #fig-6-48 }
 
-例如，如果您在项目树中高亮显示了 PLC 数据类型，则可以使用菜单"PLC -> 源文件 -> 从块生成源"（参见图 6-48）从此数据类型创建源文件。源文件可以在另一个项目中重用。
+例如，如果您在项目树中高亮显示了 PLC 数据类型，则可以使用菜单"PLC -> 源文件 -> 从块生成源"（参见[图 6-48](#fig-6-48)）从此数据类型创建源文件。源文件可以在另一个项目中重用。
 
-首先打开"保存文件"对话框（参见图 6-49）。这里，根据高亮显示的元素，您可以选择文件类型 *.awl、*.scl、*.db 或 *.udt 并输入文件名。
+首先打开"保存文件"对话框（参见[图 6-49](#fig-6-49)）。这里，根据高亮显示的元素，您可以选择文件类型 *.awl、*.scl、*.db 或 *.udt 并输入文件名。
 
 根据序列图（参见图 6-8），通过 ModuleProvider 在类 BaseProjectViewModel 的方法 InitProjectServiceProvider 中加载服务实例：
 
@@ -1091,14 +1049,12 @@ if (blockAsSource is PlcType plcType)
 ```
 图6-48
 图6-49
-
-![](images/6-49.jpg)
+![](images/6-49.jpg){ #fig-6-49 }
 
 ## 6.12 "选项"菜单
 
 图6-50
-
-![](images/6-51.jpg)
+![](images/6-51.jpg){ #fig-6-50 }
 
 
 
@@ -1107,13 +1063,12 @@ if (blockAsSource is PlcType plcType)
 ### 6.12.1 设置
 
 图6-51
-
-![alt text](images/image-36.png)
+![alt text](images/image-36.png){ #fig-6-51 }
 
 
 表 6-21
 
-| 编号 | 说明 |
+| 编号 | 说明 |{ #table-6-21 }
 |------|------|
 | 1. | 此设置定义应用程序启动时是否显示选择 TIA Portal 和 Openness 版本的对话框（参见程序集解析）。 |
 | 2. | 已安装的 TIA Portal 版本选择器。选定的版本将在应用程序启动时加载（参见程序集解析）。 |
@@ -1139,20 +1094,18 @@ if (blockAsSource is PlcType plcType)
 ## 6.13 "帮助"菜单
 
 图6-52
-
-![](images/6-53.jpg)
+![](images/6-53.jpg){ #fig-6-52 }
 
 
 ### 6.13.1 关于 TIA Portal Openness Demo
 
 图6-53
-
-![](images/6-52.jpg)
+![](images/6-52.jpg){ #fig-6-53 }
 
 
 表 6-22
 
-| 编号 | 说明 |
+| 编号 | 说明 |{ #table-6-22 }
 |------|------|
 | 1. | 运行时信息列表，如加载的工程和 Openness API 版本、加载的模块扩展，或 TIA Portal Openness Demo 应用程序的可用服务。 |
 | 2. | 将运行时信息列表与整个跟踪日志一起复制到剪贴板。 |
