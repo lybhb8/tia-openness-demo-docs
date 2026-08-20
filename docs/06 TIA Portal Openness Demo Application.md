@@ -490,7 +490,7 @@ BaseProjectViewModel: ProjectServiceProvider = \_moduleProvider.GetService(typeo
 
 ![](images/6-28.jpg)
 
-<table><tr><td rowspan="16" colspan="2">物理项目树
+物理项目树
 
 
 ## 6.10 "项目"菜单
