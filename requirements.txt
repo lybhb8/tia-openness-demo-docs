@@ -1,0 +1,4 @@
+sphinx>=7.0
+myst-parser>=2.0
+sphinx-alabaster-theme>=0.7
+readthedocs-sphinx-search>=0.3.2

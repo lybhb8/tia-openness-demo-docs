@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>3 工作模式 &#8212; TIA Portal Openness 技术文档 V17.0 文档</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <script src="_static/documentation_options.js?v=af247be0"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/translations.js?v=540d3cec"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>3 工作模式<a class="headerlink" href="#id1" title="链接到此标题。">¶</a></h1>
+<section id="tia-portal">
+<h2>3.1 TIA Portal 的开放性<a class="headerlink" href="#tia-portal" title="链接到此标题。">¶</a></h2>
+<p>TIA Portal Openness 已免费包含在 STEP 7 V17.0 / WinCC V17.0 的相应产品 DVD 中。要使用该软件，必须先安装 STEP 7 V17.0 或 WinCC V17.0。 TIA Portal Openness 为您提供了可用于访问 TIA Portal 平台的 DLL 文件。这些 DLL 文件基于 .NET Framework 4.6.1。</p>
+<section id="id2">
+<h3>3.1.1 功能集<a class="headerlink" href="#id2" title="链接到此标题。">¶</a></h3>
+<p>表 3-1</p>
+<table><tr><td>适用范围</td><td>功能</td><td>更多信息/限制</td></tr><tr><td>项目</td><td>打开 TIA Portal</td><td></td></tr><tr><td></td><td>关闭 TIA Portal</td><td></td></tr><tr><td></td><td>连接 TIA Portal</td><td></td></tr><tr><td></td><td>断开 TIA Portal 连接</td><td></td></tr><tr><td></td><td>打开本地会话</td><td rowspan="3">自 V17.0 起以该形式提供。</td></tr><tr><td></td><td>保存本地会话</td></tr><tr><td></td><td>关闭本地会话</td></tr><tr><td></td><td>创建项目</td><td></td></tr><tr><td></td><td>打开项目</td><td></td></tr><tr><td></td><td>保存项目</td><td></td></tr><tr><td></td><td>关闭项目</td><td></td></tr><tr><td>查看</td><td>逻辑树</td><td>查看依赖关系</td></tr><tr><td></td><td>物理树</td><td>查看依赖关系</td></tr><tr><td></td><td>创建新组</td><td>查看依赖关系</td></tr><tr><td></td><td>打开编辑器</td><td></td></tr><tr><td></td><td>拓扑视图</td><td></td></tr><tr><td></td><td>网络视图</td><td></td></tr><tr><td></td><td>编译</td><td></td></tr><tr><td></td><td>CAx导入</td><td></td></tr><tr><td></td><td>CAx导出</td><td></td></tr><tr><td></td><td>将元素导入为Simatic ML</td><td>查看依赖关系</td></tr><tr><td></td><td>将结构导出为Simatic ML</td><td>查看依赖关系</td></tr><tr><td>PLC</td><td>添加外部源</td><td></td></tr><tr><td></td><td>从外部源生成模块</td><td></td></tr><tr><td></td><td>从模块生成源代码</td><td></td></tr><tr><td>选项</td><td>设置</td><td></td></tr><tr><td>帮助</td><td>关于 TIA Portal Openness Demo</td><td></td></tr><tr><td>项目库</td><td>创建新组</td><td>参见依赖关系</td></tr><tr><td></td><td>编辑组名</td><td>参见依赖关系</td></tr><tr><td></td><td>将元素复制到项目</td><td>参见依赖关系</td></tr><tr><td></td><td>导出版本</td><td></td></tr><tr><td>全局库</td><td>创建新用户库</td><td></td></tr><tr><td></td><td>打开用户库</td><td></td></tr><tr><td></td><td>保存库</td><td></td></tr><tr><td></td><td>关闭用户库</td><td></td></tr><tr><td></td><td>更新项目库</td><td></td></tr><tr><td></td><td>导出版本</td><td></td></tr></table>
+<section id="id3">
+<h4>3.1.1.1 依赖项<a class="headerlink" href="#id3" title="链接到此标题。">¶</a></h4>
+<p>可用性、内容和范围取决于您的版本以及已安装的软件模块，例如 STEP 7、WinCC Unified、WinCC Professional 和 Sinamics Startdrive。参见图 6-8。</p>
+</section>
+</section>
+<section id="id4">
+<h3>3.1.2 局限性<a class="headerlink" href="#id4" title="链接到此标题。">¶</a></h3>
+<p>使用 TIA Portal Openness V17.0 时，您只能访问版本为 V17.0 的项目和库。如有必要，请在使用 TIA Portal Openness 之前升级您的项目和/或库。</p>
+<p>无法保证 TIA Portal Openness 不同版本之间的兼容性。使用新版本时，可能需要对您的程序进行修改。</p>
+<section id="id5">
+<h4>“基本项目生成器”示例<a class="headerlink" href="#id5" title="链接到此标题。">¶</a></h4>
+<p>“基础项目生成器”程序旨在帮助您开始编写您的第一个 Openness 应用程序。</p>
+<p>该程序中已预先编程了一些基本功能（例如打开 TIA Portal），您可以在此基础上构建自己的应用程序。</p>
+</section>
+</section>
+</section>
+<section id="tia-portal-openness-demo">
+<h2>3.3 “TIA Portal Openness Demo”示例<a class="headerlink" href="#tia-portal-openness-demo" title="链接到此标题。">¶</a></h2>
+<p>“TIA Portal Openness 演示”程序包含许多已完全编程的 TIA Portal Openness 功能。该程序旨在为您提供功能概览，同时也是详尽的编程辅助工具。</p>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">TIA Portal Openness 技术文档</a></h1>
+
+
+
+<p class="blurb">TIA Portal Openness 技术文档</p>
+
+
+
+
+<p>
+<iframe src="https://ghbtns.com/github-btn.html?user=opendatalab&repo=MinerU-Ecosystem&type=watch&count=true&size=large&v=2"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="提交" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>导航</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2026, Siemens AG.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 9.1.0</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="_sources/03 工作模式.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+    <a href="https://github.com/opendatalab/MinerU-Ecosystem" class="github">
+        <img src="_static/github-banner.svg" alt="Fork me on GitHub" class="github"/>
+    </a>
+    
+
+    
+  </body>
+</html>

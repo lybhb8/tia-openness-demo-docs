@@ -1,0 +1,102 @@
+site_name: TIA Portal Openness 技术文档
+site_description: 西门子 TIA Portal Openness V17.0 完整技术文档
+site_url: https://opendatalab.github.io/tia-portal-openness-docs/
+repo_url: https://github.com/lybhb8/tia-openness-demo-docs
+repo_name: 
+
+theme:
+  name: material
+  language: zh
+  palette:
+    # Main color palette
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: deep purple
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/favicon.png
+  icon:
+    logo: material/book-open-variant
+    repo: fontawesome/brands/github
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/lybhb8/tia-openness-demo-docs
+    - icon: fontawesome/brands/python
+      link: 
+  generator: false
+  disclaimer: |
+    本文档基于西门子官方技术文档翻译，仅供参考。
+
+plugins:
+  - search:
+      lang: zh
+  - minify:
+      minify_html: true
+
+markdown_extensions:
+  - abbr
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: 🔗
+      permalink_title: Permanent link
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - admonition
+  - pymdownx.details
+  - pymdownx.keys
+  - footnotes
+
+nav:
+  - 首页: index.md
+  - 快速入门:
+    - 任务说明: 01 任务.md
+    - 解决方案: 02 解决方案.md
+    - 工作模式: 03 工作模式.md
+    - 创建应用程序: 04 创建新的 TIA Portal Openness 应用程序.md
+  - 应用程序示例:
+    - Basic Project Generator: 05 基础项目生成器.md
+    - TIA Portal Openness Demo: 06 TIA Portal Openness Demo Application.md
+  - 附录:
+    - 服务与支持: 07 附录.md

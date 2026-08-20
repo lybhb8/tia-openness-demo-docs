@@ -1,0 +1,54 @@
+# 2 解决方案
+
+## 2.1 概述
+
+### 优点
+
+本文介绍的解决方案可为您带来以下优势：
+
+• 由于任务执行速度更快，效率得以提高
+
+• 准确性，得益于一致流程的自动化
+
+• 得益于程序支持的配置生成，调试时间短
+
+• 通过有针对性地利用资源，提升竞争力
+
+### 界定
+
+本应用示例未对以下内容进行说明：
+
+• 面向对象编程的基础知识
+
+• 基于编程环境，例如 Microsoft Visual Studio
+
+• TIA Portal 配置基础知识
+
+必须具备这些主题的基础知识。
+
+## 2.2 硬件和软件组件
+
+### 2.2.1 适用范围
+
+这些应用示例适用于
+
+• STEP 7 V17.0 / WinCC V17.0 TIA Portal V17.0 TIA Portal Openness V17.0简体中文（大陆）
+
+### 2.2.2 使用的组件
+
+这些应用示例是使用以下组件创建的：
+
+#### 软件组件
+
+
+表 2-1
+<table><tr><td>组件</td><td>数量</td><td>产品编号</td><td>备注</td></tr><tr><td>STEP 7 V17.0</td><td>1</td><td>6ES7822-1A.07-..</td><td></td></tr><tr><td>WinCC V17.0</td><td>1</td><td>6AV210-.....7-0</td><td></td></tr><tr><td>TIA Portal Openness V17.0</td><td>1</td><td></td><td>包含在 STEP 7 V17.0 或 WinCC V17.0 的交付范围内</td></tr><tr><td>Microsoft Visual Studio 2019</td><td>1</td><td></td><td></td></tr></table>
+
+#### 示例文件和项目
+
+下表列出了所有文件和示例项目。
+
+
+表 2-2
+<table><tr><td>组件</td><td>注释</td></tr><tr><td>108716692_TIA_PortalOpenness_GetgingStarted_V17.zip</td><td>关于使用 TIA Portal Openness 的入门示例（参见第 5 章）。</td></tr><tr><td>108716692_TIA_PortalOpenness_Demo_V17.zip</td><td>关于使用 TIA Portal Openness 的综合示例（参见第 6 章）。</td></tr><tr><td>108716692_TIA_PortalOpenness_GetgingStartedAndDemo_V17_en.pdf</td><td>本文档。</td></tr></table>
+
