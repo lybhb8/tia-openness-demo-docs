@@ -5,12 +5,11 @@
 在开发“TIAPortalOpennessDemo”应用程序时，采用了模型-视图-视图模型（MVVM）架构模式。 参见图 6-1 和图 6-8。因此，该解决方案由多个项目组成，这些项目按不同区域进行组织（参见图 6-9）。此设计旨在进一步简化您开发自己的 Openness 应用程序的入门过程。关于各个区域和项目的描述，请参见表 6-4。
 
 !!! note
+    为了向您展示如何简化针对不同版本的 Openness 应用程序的开发流程，我们开发了这款演示应用程序，使其能够仅通过一个解决方案和一个应用程序，即可开发并支持多个版本的 Siemens.Engineering.dll 以及 Openness API。
 
-为了向您展示如何简化针对不同版本的 Openness 应用程序的开发流程，我们开发了这款演示应用程序，使其能够仅通过一个解决方案和一个应用程序，即可开发并支持多个版本的 Siemens.Engineering.dll 以及 Openness API。
+    要实现这一点，您必须在需要引用 Siemens.Engineering.dll 的项目中并行引用该库的多个版本。此外，您还必须在此解决方案中的每个项目属性中禁用"自动生成绑定重定向"选项（参见图 6-2，红色框内）。
 
-要实现这一点，您必须在需要引用 Siemens.Engineering.dll 的项目中并行引用该库的多个版本。此外，您还必须在此解决方案中的每个项目属性中禁用"自动生成绑定重定向"选项（参见图 6-2，红色框内）。
-
-关于此情况应如何处理，请参阅表 6-4 第 4 项中的说明。
+    关于此情况应如何处理，请参阅表 6-4 第 4 项中的说明。
 
 
 图 6-1
@@ -39,12 +38,11 @@
 从解决方案或项目中卸载的任何内容都会被保留，并可在以后重新加载。
 
 !!! note
+    该解决方案包含 Step7、Sinamics Startdrive、WinCC Professional 和 WinCC Unified 模块的相关项目。
 
-该解决方案包含 Step7、Sinamics Startdrive、WinCC Professional 和 WinCC Unified 模块的相关项目。
+    如果您未安装这些模块所需的软件，则必须从解决方案中卸载这些项目。
 
-如果您未安装这些模块所需的软件，则必须从解决方案中卸载这些项目。
-
-对于无法获取或您不打算支持的特定版本，同样适用上述做法。在这种情况下，也请将相应的目录从项目中移除。
+    对于无法获取或您不打算支持的特定版本，同样适用上述做法。在这种情况下，也请将相应的目录从项目中移除。
 
 
 ### 6.2.1 卸载项目
@@ -112,8 +110,7 @@
 您可以在下载包“108716692\_TIA\_PortalOpenness\_Demo\_V17.zip”中找到一个已完全编译的“exe”文件，该下载包位于“TiaPortalOpennessDemo\_Application.zip”内。
 
 !!! note
-
-您可以在下载包"108716692_TIA_PortalOpenness_Demo_V17.zip"中找到一个已完全编译的"exe"文件，该下载包位于"TiaPortalOpennessDemo_Application.zip"内。
+    您可以在下载包"108716692_TIA_PortalOpenness_Demo_V17.zip"中找到一个已完全编译的"exe"文件，该下载包位于"TiaPortalOpennessDemo_Application.zip"内。
 
 
 
@@ -156,15 +153,13 @@
 如果您选择“SinamicsStartdriveModule”模块，根据项目大小不同，打开项目可能需要稍长一些时间。这是因为“SinamicsStartdriveModule”会将驱动单元加载到项目树中。每个驱动单元可能包含大量参数。
 
 !!! note
-
-如果您选择"SinamicsStartdriveModule"模块，根据项目大小不同，打开项目可能需要稍长一些时间。这是因为"SinamicsStartdriveModule"会将驱动单元加载到项目树中。每个驱动单元可能包含大量参数。
+    如果您选择"SinamicsStartdriveModule"模块，根据项目大小不同，打开项目可能需要稍长一些时间。这是因为"SinamicsStartdriveModule"会将驱动单元加载到项目树中。每个驱动单元可能包含大量参数。
 
 首次启动应用程序时，ApplicationSettings 会自动选中所有模块进行加载。请禁用无法加载的模块，以防止加载模块时可能出现的错误（更多信息请参见"设置"）。
 
 
 !!! note
-
-请注意，API 调用并非在服务属性 TiaPortal 上执行，而是在 TiaPortal 中同名的 Siemens.Engineering 对象上执行。因此，.Attach() 方法返回的值是一个 TIA Portal 实例，该实例会被赋值给同名的服务属性 TiaPortal。
+    请注意，API 调用并非在服务属性 TiaPortal 上执行，而是在 TiaPortal 中同名的 Siemens.Engineering 对象上执行。因此，.Attach() 方法返回的值是一个 TIA Portal 实例，该实例会被赋值给同名的服务属性 TiaPortal。
 
 
 
@@ -346,8 +341,7 @@ ITiaPortalServiceProvider;
 通过服务实例（参见打开 TIA Portal），调用方法 ConnectTiaPortal(int processId)，该方法使用 API 调用 TiaPortal.GetProcess(processId, 5000).Attach(); 与相应 processId 的 TIA Portal 实例建立连接。
 
 !!! note
-
-请注意，API 调用并非在服务属性 TiaPortal 上执行，而是在 TiaPortal 中同名的 Siemens.Engineering 对象上执行。因此，.Attach() 方法返回的值是一个 TIA Portal 实例，该实例会被赋值给同名的服务属性 TiaPortal。
+    请注意，API 调用并非在服务属性 TiaPortal 上执行，而是在 TiaPortal 中同名的 Siemens.Engineering 对象上执行。因此，.Attach() 方法返回的值是一个 TIA Portal 实例，该实例会被赋值给同名的服务属性 TiaPortal。
 
 
 
@@ -358,8 +352,7 @@ ITiaPortalServiceProvider;
 通过服务实例调用 DisconnectTiaPortal 方法（参见“打开 TIA Portal”）。该方法使用 API 调用 TiaPortal?.Dispose(); 来终止与 TIA Portal 实例的连接。
 
 !!! note
-
-请注意，此 API 调用 .Dispose() 是在 TIA Portal 实例上执行的，即服务属性 TiaPortal。
+    请注意，此 API 调用 .Dispose() 是在 TIA Portal 实例上执行的，即服务属性 TiaPortal。
 
 
 ### 6.8.5 打开本地会话
@@ -379,8 +372,7 @@ BaseMultiuserProjectViewModel: MultiuserServiceProvider = \_moduleProvider.GetSe
 这就是为什么 \*.ap 和 \*.als 会出现在 TIA Portal Openness Demo应用程序中（参见”TIA Portal”幻灯片面板）。
 
 !!! note
-
-单用户项目文件的文件扩展名为 *.ap<Version>，其中 <Version> 代表创建该项目时所使用的版本号。本地会话的项目文件扩展名为 *.amc<Version>。相比之下，本地会话文件的扩展名为 *.als<Version>。
+    单用户项目文件的文件扩展名为 *.ap<Version>，其中 <Version> 代表创建该项目时所使用的版本号。本地会话的项目文件扩展名为 *.amc<Version>。相比之下，本地会话文件的扩展名为 *.als<Version>。
 
 
 ### 6.8.6 保存本地会话
@@ -812,8 +804,7 @@ LogicalTreeView);
 | 2. | 启动"将结构导入为 SimaticML"功能首先打开选择对话框，您可以在其中选择要作为下级结构导入的文件夹（参见图 6-41）。所有子文件夹及其中的类型将一起导入。 |
 
 !!! note
-
-请注意，选定的导入目录本身（参见图 6-41）作为根目录不会被导入。仅导入选定目录中的所有子文件夹。
+    请注意，选定的导入目录本身（参见图 6-41）作为根目录不会被导入。仅导入选定目录中的所有子文件夹。
 
 
 
