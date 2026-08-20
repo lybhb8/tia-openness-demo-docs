@@ -23,32 +23,17 @@ description: 西门子 TIA Portal Openness V17.0 完整技术文档，包含入�
 
 ### 主要内容
 
-::: card-grid
-::: card
-title: 快速入门
-icon: material/rocket-launch
-content: 了解 TIA Portal Openness 的基本概念、应用场景和快速上手指南
----
-:::
-::: card
-title: 应用程序示例
-icon: material/code-tags
-content: 深入学习 Basic Project Generator 和 TIA Portal Openness Demo 的完整功能
----
-:::
-::: card
-title: API 参考
-icon: material/file-code
-content: 掌握 Openness API 的使用方法和代码示例
----
-:::
-::: card
-title: 附录与支持
-icon: material/book-open-variant
-content: 获取服务支持、相关链接和文档更新信息
----
-:::
-:::
+!!! note "快速入门"
+    了解 TIA Portal Openness 的基本概念、应用场景和快速上手指南
+
+!!! note "应用程序示例"
+    深入学习 Basic Project Generator 和 TIA Portal Openness Demo 的完整功能
+
+!!! note "API 参考"
+    掌握 Openness API 的使用方法和代码示例
+
+!!! note "附录与支持"
+    获取服务支持、相关链接和文档更新信息
 
 ## 📖 文档结构
 

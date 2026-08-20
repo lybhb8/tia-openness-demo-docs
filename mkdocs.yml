@@ -46,8 +46,6 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/lybhb8/tia-openness-demo-docs
-    - icon: fontawesome/brands/python
-      link: 
   generator: false
   disclaimer: |
     本文档基于西门子官方技术文档翻译，仅供参考。
