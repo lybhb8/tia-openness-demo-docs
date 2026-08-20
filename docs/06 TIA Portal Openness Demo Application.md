@@ -367,12 +367,12 @@ BaseMultiuserProjectViewModel: MultiuserServiceProvider = \_moduleProvider.GetSe
 
 单用户项目文件的文件扩展名为 \*.ap17，其中 17 代表创建该项目时所使用的版本号。
 
-本地会话的项目文件扩展名为 \*.amc<Version>。相比之下，本地会话文件的扩展名为 \*.als<Version>。
+本地会话的项目文件扩展名为 \*.amc&lt;Version&gt;。相比之下，本地会话文件的扩展名为 \*.als&lt;Version&gt;。
 
 这就是为什么 \*.ap 和 \*.als 会出现在 TIA Portal Openness Demo应用程序中（参见”TIA Portal”幻灯片面板）。
 
 !!! note
-    单用户项目文件的文件扩展名为 *.ap<Version>，其中 <Version> 代表创建该项目时所使用的版本号。本地会话的项目文件扩展名为 *.amc<Version>。相比之下，本地会话文件的扩展名为 *.als<Version>。
+    单用户项目文件的文件扩展名为 *.ap&lt;Version&gt;，其中 &lt;Version&gt; 代表创建该项目时所使用的版本号。本地会话的项目文件扩展名为 *.amc&lt;Version&gt;。相比之下，本地会话文件的扩展名为 *.als&lt;Version&gt;。
 
 
 ### 6.8.6 保存本地会话
@@ -731,7 +731,7 @@ if (CurrentProject != null)
 }
 ```
 
-对于实际的 API 调用，首先找到导入提供程序 var importProvider = project.GetService<CaxProvider>();，然后在上面进行 API 调用 importProvider.Import(caxImportFileInfo, logFileInfo, caxImportOption);。
+对于实际的 API 调用，首先找到导入提供程序 var importProvider = project.GetService&lt;CaxProvider&gt;();，然后在上面进行 API 调用 importProvider.Import(caxImportFileInfo, logFileInfo, caxImportOption);。
 
 #### 6.10.4.2 CAx 导出
 
@@ -753,7 +753,7 @@ if (CurrentProject != null)
 }
 ```
 
-对于实际的 API 调用，首先找到导入提供程序 var exportProvider = project.GetService<CaxProvider>();，然后在上面进行 API 调用 exportProvider.Export(project, caxExportFileInfo, logFileInfo);。
+对于实际的 API 调用，首先找到导入提供程序 var exportProvider = project.GetService&lt;CaxProvider&gt;();，然后在上面进行 API 调用 exportProvider.Export(project, caxExportFileInfo, logFileInfo);。
 
 #### 6.10.4.3 将元素导入为 Simatic ML
 
