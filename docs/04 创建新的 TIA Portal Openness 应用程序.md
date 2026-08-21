@@ -4,7 +4,7 @@
 
 安装 TIA Portal V17.0。
 
-::: note
+!!! note
 在 STEP 7 V17.0 或 WinCC V17.0 中，TIA Portal Openness V17.0 包含在交付范围内，并默认随其一同安装。
 :::
 
@@ -45,6 +45,6 @@
 
 如果您正在使用 Microsoft Visual Studio，即使您已经点击了“全部是”，仍可能会收到该提示
 
-::: note
+!!! note
 如果您正在使用 Microsoft Visual Studio，即使您已经点击了"全部是"，仍可能会收到该安全提示。请按照第 5 章所引用的文章中的说明操作，以避免出现这种情况。
 :::

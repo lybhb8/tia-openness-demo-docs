@@ -4,7 +4,7 @@ description: 西门子 TIA Portal Openness V17.0 完整技术文档，包含入�
 
 # TIA Portal Openness 技术文档
 
-::: note
+!!! note
 西门子 TIA Portal Openness V17.0 完整技术文档，基于官方文档翻译，包含入门指南、API 参考和演示应用程序说明。
 :::
 
@@ -65,6 +65,6 @@ TIA Portal Openness 技术文档/
 
 ---
 
-::: tip 提示
+!!! tip 提示
 选择左侧导航菜单开始阅读文档，或使用顶部搜索框快速定位内容。
 :::
