@@ -6,7 +6,6 @@ description: 西门子 TIA Portal Openness V17.0 完整技术文档，包含入�
 
 !!! note
 西门子 TIA Portal Openness V17.0 完整技术文档，基于官方文档翻译，包含入门指南、API 参考和演示应用程序说明。
-:::
 
 ## 📚 文档概览
 
@@ -59,12 +58,12 @@ TIA Portal Openness 技术文档/
 
 ## 🔗 相关链接
 
-- [西门子工业在线支持](https://support.industry.siemens.com)
+- [阅读文档]()
+- [github文档仓库](https://github.com/lybhb8/tia-openness-demo-docs)
 - [TIA Portal 官方文档](https://support.industry.siemens.com/cs/ww/en/view/108716692)
-- [MinerU 文档提取工具](https://github.com/opendatalab/MinerU-Ecosystem)
+
 
 ---
 
 !!! tip 提示
 选择左侧导航菜单开始阅读文档，或使用顶部搜索框快速定位内容。
-:::
