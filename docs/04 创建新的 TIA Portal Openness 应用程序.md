@@ -16,10 +16,10 @@
 表 4-1
 | 编号 | 操作 |
 |------|------|
-| 1. | 在 Windows 任务栏上右键单击“开始”（Windows）图标。选择“计算机管理”，然后单击“确定”以确认用户账户控制（UAC）对话框中的提示。![alt text](images/image-2.png)|
-| 2. | 打开“本地用户和组>用户”然后双击用户名“OpennessUser”。 ![alt text](images/image.png)|
-| 3. | 切换到“所属”选项卡，然后点击“添加...”按钮。![alt text](images/image-3.png)|
-| 4. | 输入“Siemens TIA Openness”，然后单击“确定”进行确认。![alt text](images/image-4.png)|
+| 1. | 在 Windows 任务栏上右键单击“开始”（Windows）图标。选择“计算机管理”，然后单击“确定”以确认用户账户控制（UAC）对话框中的提示。![alt text](images/image-2-dup1.png)|
+| 2. | 打开“本地用户和组>用户”然后双击用户名“OpennessUser”。 ![alt text](images/image-dup1.png)|
+| 3. | 切换到“所属”选项卡，然后点击“添加...”按钮。![alt text](images/image-3-dup1.png)|
+| 4. | 输入“Siemens TIA Openness”，然后单击“确定”进行确认。![alt text](images/image-4-dup1.png)|
 | 5. | 关闭所有打开的对话框，然后重新登录。|
 
 
@@ -31,7 +31,7 @@
 |------|------|
 | 1. | 创建一个新项目（例如在 Microsoft Visual Studio 中）。 |
 | 2. | 创建对 Openness DLL（Siemens.Engineering.dll 和 Siemens.Engineering.HMI.dll）的引用。 它们位于 TIA Portal 安装目录下的“... > Siemens > Automation > Portal V17_0 > PublicAPI > V17.0”中。 |
-| 3. | 将这两个 DLL 的“Copy Local”属性设置为“False”。![alt text](images/image-1.png) |
+| 3. | 将这两个 DLL 的“Copy Local”属性设置为“False”。![alt text](images/image-1-dup1.png) |
 
 ## 4.4 配置文件 / AssemblyResolve
 
@@ -51,7 +51,7 @@
 
 | 编号 | 操作 |
 |------|------|
-| 1. |首次启动该应用程序时，会显示以下安全提示：![alt text](images/image-5.png)  来源:[系统手册(https://support.industry.siemens.com/cs/ww/en/view/109477163)](https://support.industry.siemens.com/cs/ww/en/view/109477163)|
+| 1. |首次启动该应用程序时，会显示以下安全提示：![alt text](images/image-5-dup1.png)  来源:[系统手册(https://support.industry.siemens.com/cs/ww/en/view/109477163)](https://support.industry.siemens.com/cs/ww/en/view/109477163)|
 | 2. |点击“是”确认该消息，以允许一次性访问。点击 “是，全部”确认该消息，以始终允许该应用程序访问。点击“否”以拒绝访问。|
 
 
