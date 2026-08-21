@@ -1142,6 +1142,7 @@ if (blockAsSource is PlcType plcType)
 ## 6.12 "选项"菜单
 
 图6-50
+
 ![](images/6-51.jpg){ #fig-6-50 }
 
 

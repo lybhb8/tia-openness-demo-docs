@@ -47,7 +47,7 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/lybhb8/tia-openness-demo-docs
   generator: false
-  disclaimer: |
+  disclaimer: 
     本文档基于西门子官方技术文档翻译，仅供参考。
 
 plugins:
@@ -95,6 +95,6 @@ nav:
     - 创建应用程序: 04 创建新的 TIA Portal Openness 应用程序.md
   - 应用程序示例:
     - Basic Project Generator: 05 基础项目生成器.md
-    - TIA Portal Openness Demo: 06 TIA Portal Openness Demo Application.md
+    - TIA Portal Openness Demo: 06 TIA Portal Openness Demo 应用程序.md
   - 附录:
     - 服务与支持: 07 附录.md
