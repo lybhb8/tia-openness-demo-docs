@@ -2,27 +2,31 @@
 
 ## 6.1 概述
 
-在开发“TIAPortalOpennessDemo”应用程序时，采用了模型-视图-视图模型（MVVM）架构模式。 参见图 6-1 和图 6-8。因此，该解决方案由多个项目组成，这些项目按不同区域进行组织（参见图 6-9）。此设计旨在进一步简化您开发自己的 Openness 应用程序的入门过程。关于各个区域和项目的描述，请参见表 6-4。
+在开发“TIAPortalOpennessDemo”应用程序时，采用了模型-视图-视图模型（MVVM）架构模式。 参见图[图 6-1](#fig-6-1) 和图 6-8。因此，该解决方案由多个项目组成，这些项目按不同区域进行组织（参见图[图 6-9](#fig-6-9)）。此设计旨在进一步简化您开发自己的 Openness 应用程序的入门过程。关于各个区域和项目的描述，请参见表 6-4。
 
 !!! note
     为了向您展示如何简化针对不同版本的 Openness 应用程序的开发流程，我们开发了这款演示应用程序，使其能够仅通过一个解决方案和一个应用程序，即可开发并支持多个版本的 Siemens.Engineering.dll 以及 Openness API。
 
-    要实现这一点，您必须在需要引用 Siemens.Engineering.dll 的项目中并行引用该库的多个版本。此外，您还必须在此解决方案中的每个项目属性中禁用"自动生成绑定重定向"选项（参见图 6-2，红色框内）。
+    要实现这一点，您必须在需要引用 Siemens.Engineering.dll 的项目中并行引用该库的多个版本。此外，您还必须在此解决方案中的每个项目属性中禁用"自动生成绑定重定向"选项（参见图[图 6-2](#fig-6-2)，红色框内）。
 
     关于此情况应如何处理，请参阅表 6-4 第 4 项中的说明。
 
 
 图 6-1
+
 ![](images/7f56a7bd4221ff0813006bb16c33719be65b8826ab732f58cb6c1ac1e794cad9.jpg){ #fig-6-1 }
+
 呈现与呈现逻辑
 
 为了向您展示如何简化针对不同版本的 Openness 应用程序的开发流程，我们开发了这款演示应用程序，使其能够仅通过一个解决方案和一个应用程序，即可开发并支持多个版本的 Siemens.Engineering.dll 以及 Openness API。
 
-要实现这一点，您必须在需要引用 Siemens.Engineering.dll 的项目中并行引用该库的多个版本。此外，您还必须在此解决方案中的每个项目属性中禁用“自动生成绑定重定向”选项（参见图 6-2，红色框内）。
+要实现这一点，您必须在需要引用 Siemens.Engineering.dll 的项目中并行引用该库的多个版本。此外，您还必须在此解决方案中的每个项目属性中禁用“自动生成绑定重定向”选项（参见图[图 6-2](#fig-6-2)，红色框内）。
 
 
 关于此情况应如何处理，请参阅表6-4第4项中的说明。
+
 图6-2
+
 ![](images/0c2b0d6a9feab3ecf9e1dec2fe6fcd4d6b7170a86ef1a8e10afa0579a02bf831.jpg){ #fig-6-2 }
 
 ## 6.2 配置解决方案
@@ -46,6 +50,7 @@
 ### 6.2.1 卸载项目
 
 图6-3
+
 ![](images/06ec617b45150aba8057f4d6faad78e5e839ec26802b03d78a19603070b1f67c.jpg){ #fig-6-3 }
 
 表 6-1
@@ -55,6 +60,7 @@
 ### 6.2.2 重新加载项目
 
 图6-4
+
 ![](images/78a7410f5b6e8095924f6a8208571b95edd4f26db1cd9750cdab4c5f3da3702e.jpg){ #fig-6-4 }
 
 表 6-2
@@ -63,7 +69,7 @@
 
 ### 6.2.3 将项目文件夹从项目中排除
 
-根据您未使用的版本，必须将这些版本的相应实现从项目中排除。为此，请使用包含“从项目中排除”功能的右键菜单（参见图 6-5）。这样您就可以编译项目和/或解决方案。 正因如此，源代码的清晰结构尤为重要。
+根据您未使用的版本，必须将这些版本的相应实现从项目中排除。为此，请使用包含“从项目中排除”功能的右键菜单（参见图[图 6-5](#fig-6-5)）。这样您就可以编译项目和/或解决方案。 正因如此，源代码的清晰结构尤为重要。
 
 以下项目包含特定版本的实现：
 
@@ -80,20 +86,25 @@
 • WinCcUnified – 服务 – V…
 
 图6-5
+
 ![alt text](images/image-11.png){ #fig-6-5 }
 
 ### 6.2.4 将项目文件夹添加到项目中
 
 图6-6
+
 ![](images/1265b705a6335bed38445c03c81aa717475eaed95563a3e3d072c43fd76a60d4.jpg){ #fig-6-6 }
 
 表 6-3
 
 <table><tr><td>编号</td><td>说明</td></tr><tr><td>1.</td><td>通过项目”SinamicsStartdrive”的右键菜单激活”显示所有文件”功能。</td></tr><tr><td>2.</td><td>您希望将其包含到项目中的被排除项目文件夹。</td></tr><tr><td>3.</td><td>通过项目文件夹的右键菜单执行”包含到项目中”功能。</td></tr></table>
 
-![](images/ff7df845beceedb50b787b3152d299626e65f040a640ce83dcf51ac261aad974.jpg)
+图6-7
+
+![](images/ff7df845beceedb50b787b3152d299626e65f040a640ce83dcf51ac261aad974.jpg){ #fig-6-7 }
 
 图 6-8
+
 ![](images/9c7eba53a9c9e76b96ffccd9c53dd1491baae8fde02d2fe11f133ca7ad533d8a.jpg){ #fig-6-8 }
 
 概述了 TIAPortalOpennessDemo 应用程序中使用的主要命名空间和类型。
@@ -106,11 +117,13 @@
     您可以在下载包"108716692_TIA_PortalOpenness_Demo_V17.zip"中找到一个已完全编译的"exe"文件，该下载包位于"TiaPortalOpennessDemo_Application.zip"内。
 
 
+图6-9
 
-![alt text](images/image-9.png)
+![alt text](images/image-9.png){ #fig-6-9 }
 
 
 表 6-4
+
 ![alt text](images/image-13.png)
 
 
@@ -135,12 +148,13 @@
 
 
 图 6-10
+
 ![](images/6-10.jpg){ #fig-6-10 }
 
 
 ## 6.4 预选模块
 
-要使用 Sinamics Startdrive、STEP 7、WinCC Professional 或 WinCC Unified 的相关功能，必须安装相应的软件模块。随后，TIA Portal Openness Demo应用的模块扩展将从预设目录中加载（参见“设置”），并作为选项提供（参见图 6-11）。
+要使用 Sinamics Startdrive、STEP 7、WinCC Professional 或 WinCC Unified 的相关功能，必须安装相应的软件模块。随后，TIA Portal Openness Demo应用的模块扩展将从预设目录中加载（参见“设置”），并作为选项提供（参见图[图 6-11](#fig-6-11)）。
 
 如果您选择“SinamicsStartdriveModule”模块，根据项目大小不同，打开项目可能需要稍长一些时间。这是因为“SinamicsStartdriveModule”会将驱动单元加载到项目树中。每个驱动单元可能包含大量参数。
 
@@ -160,6 +174,7 @@
 应用程序的主视图分为多个窗格。这些窗格在侧边面板中以显示或可选地隐藏有关 TIA Portal 实例以及项目/全局库的信息。单击内容窗格会自动隐藏侧边面板。
 
 图 6-11
+
 ![](images/6-12.jpg){ #fig-6-11 }
 
 表 6-6
@@ -177,6 +192,7 @@
 ## 6.6 "TIA Portal" 侧边面板
 
 图 6-12
+
 ![](images/6-13.jpg){ #fig-6-12 }
 
 表 6-7
@@ -192,6 +208,7 @@
 ### 6.7.1 项目库
 
 图 6-14
+
 ![alt text](images/image-17.png){ #fig-6-14 }
 
 表 6-8
@@ -207,6 +224,7 @@
 #### 6.7.1.1 创建或编辑组
 
 图 6-15
+
 ![alt text](images/image-18.png){ #fig-6-15 }
 
 表 6-9
@@ -223,6 +241,7 @@
 #### 6.7.1.2 将类型版本从项目库复制到项目
 
 图 6-16
+
 ![alt text](images/image-19.png){ #fig-6-16 }
 
 表 6-10
@@ -240,6 +259,7 @@
 #### 6.7.1.3 导出类型版本
 
 图 6-17
+
 ![alt text](images/image-20.png){ #fig-6-17 }
 
 表 6-11
@@ -252,6 +272,7 @@
 ### 6.7.2 全局库
 
 图 6-18
+
 ![alt text](images/image-21.png){ #fig-6-18 }
 
 表 6-12
@@ -268,6 +289,7 @@
 
 
 图 6-19
+
 ![alt text](images/image-22.png){ #fig-6-19 }
 
 表 6-13
@@ -286,6 +308,7 @@
 您可以在"文件"菜单中使用"打开 TIA Portal"来打开新的 TIA Portal 实例。
 
 图 6-20
+
 ![alt text](images/image-23.png){ #fig-6-20 }
 
 
@@ -293,7 +316,7 @@
 
 
 
-根据序列图（参见图 6-7），通过 ModuleProvider 在类 TiaPortalViewModel 的方法 InitServiceProvider 中加载服务实例：
+根据序列图（参见图[图 6-7](#fig-6-7)），通过 ModuleProvider 在类 TiaPortalViewModel 的方法 InitServiceProvider 中加载服务实例：
 
 ```csharp
 _tiaPortalServiceProvider =
@@ -312,12 +335,14 @@ ITiaPortalServiceProvider;
 ### 6.8.3 连接 TIA Portal
 
 图 6-21
+
 ![alt text](images/image-24.png){ #fig-6-21 }
 
 图 6-22
+
 ![alt text](images/image-25.png){ #fig-6-22 }
 
-"文件"菜单中的"连接 TIA Portal"或"连接 TIA Portal"按钮（参见图 6-21，第 2 项）可以与现有的 TIA Portal 实例建立连接。此实例中打开的项目将自动加载并打开用于编辑。为此，从所有运行进程的列表中选择实例（参见图 6-21，第 1 项），然后单击"连接 TIA Portal"按钮（参见图 6-21，第 2 项）。与 TIA Portal Openness Demo 应用程序连接的实例的进程 ID（参见图 6-22，第 1 项）将显示在"当前进程 ID:"字段中（参见图 6-22，第 2 项）。
+"文件"菜单中的"连接 TIA Portal"或"连接 TIA Portal"按钮（参见图[图 6-21](#fig-6-21)，第 2 项）可以与现有的 TIA Portal 实例建立连接。此实例中打开的项目将自动加载并打开用于编辑。为此，从所有运行进程的列表中选择实例（参见图[图 6-21](#fig-6-21)，第 1 项），然后单击"连接 TIA Portal"按钮（参见图[图 6-21](#fig-6-21)，第 2 项）。与 TIA Portal Openness Demo 应用程序连接的实例的进程 ID（参见图[图 6-22](#fig-6-22)，第 1 项）将显示在"当前进程 ID:"字段中（参见图[图 6-22](#fig-6-22)，第 2 项）。
 
 通过服务实例（参见打开 TIA Portal），调用方法 ConnectTiaPortal(int processId)，该方法使用 API 调用 TiaPortal.GetProcess(processId, 5000).Attach(); 与相应 processId 的 TIA Portal 实例建立连接。
 
@@ -340,7 +365,7 @@ ITiaPortalServiceProvider;
 
 您可以使用“文件”菜单中的“打开本地会话”来打开一个本地会话实例。
 
-根据序列图（参见图 6-7），通过 ModuleProvider 在类
+根据序列图（参见图[图 6-7](#fig-6-7)），通过 ModuleProvider 在类
 
 BaseMultiuserProjectViewModel: MultiuserServiceProvider = \_moduleProvider.GetService(typeof(IMultiuserServiceProvider)) as IMultiuserServiceProvider;
 
@@ -372,9 +397,10 @@ var localSession = TiaPortal.LocalSessions.FirstOrDefault(); localSession?.Close
 
 ### 6.8.8 创建项目
 
-在”文件”菜单中单击”创建项目”以创建一个新项目。为此，您必须输入项目名称以及项目将被创建和保存的目标文件夹（参见图 6-23）。
+在”文件”菜单中单击”创建项目”以创建一个新项目。为此，您必须输入项目名称以及项目将被创建和保存的目标文件夹（参见图[图 6-23](#fig-6-23)）。
 
 图6-23
+
 ![alt text](images/image-26.png){ #fig-6-23 }
 
 
@@ -383,7 +409,7 @@ var localSession = TiaPortal.LocalSessions.FirstOrDefault(); localSession?.Close
 <table><tr><td>编号</td><td>说明</td></tr><tr><td>1.</td><td>为新项目输入名称。 名称必须符合 Windows 的文件命名规则。</td></tr><tr><td>2.</td><td>打开”文件资源管理器”，选择将要创建新项目的目标目录。</td></tr><tr><td>3.</td><td>新项目将创建的路径是从设置中读取的（参见”设置”），并显示在文本框中。如果需要，可以对其进行编辑。</td></tr><tr><td>4.</td><td>点击”创建”按钮以创建新项目。 通过调用 ValidationProvider，系统将首先验证您的输入；若验证通过，对话框将关闭，并创建新项目。</td></tr><tr><td>5.</td><td>如需中止该过程，请点击”取消”按钮。</td></tr></table>
 
 
-根据序列图（见图 6-7），通过 ModuleProvider 在类
+根据序列图（见图[图 6-7](#fig-6-7)），通过 ModuleProvider 在类
 
 BaseProjectViewModel: ProjectServiceProvider = \_moduleProvider.GetService(typeof(IProjectServiceProvider)) as IProjectServiceProvider;
 
@@ -391,11 +417,12 @@ BaseProjectViewModel: ProjectServiceProvider = \_moduleProvider.GetService(typeo
 
 ### 6.8.9 打开项目
 
-通过“文件”菜单中的“打开项目”打开一个项目。为此，请使用文件选择对话框选择所需的项目文件（参见图 6-24）。 文件过滤器设置为 \*.ap\*，以便显示所有项目版本。随后项目打开，项目数据（项目树）被加载到应用程序中（参见图 6-26 和图 6-27）。
+通过“文件”菜单中的“打开项目”打开一个项目。为此，请使用文件选择对话框选择所需的项目文件（参见图[图 6-24](#fig-6-24)）。 文件过滤器设置为 \*.ap\*，以便显示所有项目版本。随后项目打开，项目数据（项目树）被加载到应用程序中（参见图[图 6-26](#fig-6-26) 和图 6-27）。
 
 通过服务实例（参见“创建项目”），调用 OpenProjectAsync(string projectPath) 方法。该方法使用 API 调用 Project newProject = tiaPortal.Projects.Open(new FileInfo(projectPath)); 来打开作为参数传递的所选项目。
 
 图 6-24
+
 ![](images/364d11c979faa89db86ab556c5ea8d17d9240139a834fd46d3c87f729a503ff5.jpg){ #fig-6-24 }
 
 ### 6.8.10 保存项目
@@ -417,11 +444,12 @@ BaseProjectViewModel: ProjectServiceProvider = \_moduleProvider.GetService(typeo
 ## 6.9 “视图”菜单
 
 图 6-25
+
 ![alt text](images/image-27.png){ #fig-6-25 }
 
-通过“视图”菜单，您可以切换项目中的逻辑树结构和物理树结构。参见图 6-26 和图 6-27。
+通过“视图”菜单，您可以切换项目中的逻辑树结构和物理树结构。参见图[图 6-26](#fig-6-26) 和图 6-27。
 
-根据序列图（参见图 6-7），在“视图”菜单中单击“逻辑树”或“物理树”将调用 TiaPortalOpennessCore 项目中 MenuViewModel 类中的命令处理程序 SetNavigationPath(string navigationPath)。 系统将要显示或导航到的视图名称将作为参数传递。
+根据序列图（参见图[图 6-7](#fig-6-7)），在“视图”菜单中单击“逻辑树”或“物理树”将调用 TiaPortalOpennessCore 项目中 MenuViewModel 类中的命令处理程序 SetNavigationPath(string navigationPath)。 系统将要显示或导航到的视图名称将作为参数传递。
 
 ```text
 <MenuItem Header="_View">
@@ -451,8 +479,10 @@ BaseProjectViewModel: ProjectServiceProvider = \_moduleProvider.GetService(typeo
 
 这里有一个例外，即“设备组”，因为它没有导轨或机架。因此，使用设备名称作为额外的分组依据。
 
-逻辑树结构将所有设备按机架或机柜进行分类。所有未插电的设备均与机架或机柜位于同一层级（参见图 6-26中的红色方框）。
+逻辑树结构将所有设备按机架或机柜进行分类。所有未插电的设备均与机架或机柜位于同一层级（参见图[图 6-26](#fig-6-26)中的红色方框）。
+
 图6-26
+
 ![](images/9f591dab3b2a9099affbf035aa7aaf7e2331e0f4a8e4947083046addfa378470.jpg){ #fig-6-26 }
 
 ### 6.9.2 物理视图
@@ -460,7 +490,10 @@ BaseProjectViewModel: ProjectServiceProvider = \_moduleProvider.GetService(typeo
 在物理树结构中，所有设备都位于一个站点的下方；在此，一条轨道及其上的所有设备（包括未连接的设备）位于同一层级。有关哪些设备已断开连接、哪些未断开连接的信息，请参阅属性视图（参见[图 6-28](#fig-6-28)）。
 
 图6-27
+
 ![](images/6-27.jpg){ #fig-6-27 }
+
+图6-28
 
 ![](images/6-28.jpg){ #fig-6-28 }
 
@@ -472,12 +505,14 @@ BaseProjectViewModel: ProjectServiceProvider = \_moduleProvider.GetService(typeo
 在此菜单中，您可以找到可在项目级别或项目项上运行的功能。
 
 图6-29
+
 ![alt text](images/image-29.png){ #fig-6-29 }
 
 
 ### 6.10.1 创建新组
 
 图6-30
+
 ![alt text](images/image-28.png){ #fig-6-30 }
 
 表 6-15
@@ -489,7 +524,7 @@ BaseProjectViewModel: ProjectServiceProvider = \_moduleProvider.GetService(typeo
 | 3. | 为高亮显示的元素创建新组（作为子组）并关闭对话框。 |
 | 4. | 取消操作并关闭对话框。 |
 
-根据序列图（参见图 6-7），通过 ModuleProvider 在类 BaseProjectViewModel 的方法 InitProjectServiceProvider 中加载服务实例：
+根据序列图（参见图[图 6-7](#fig-6-7)），通过 ModuleProvider 在类 BaseProjectViewModel 的方法 InitProjectServiceProvider 中加载服务实例：
 
 ```csharp
 ProjectServiceProvider =
@@ -497,7 +532,7 @@ _moduleProvider.GetService(typeof(IProjectServiceProvider)) as
 IProjectServiceProvider;
 ```
 
-通过该实例，调用方法 ProjectServiceProvider.CreateNewGroup(newGroupName, (string)SelectedItem.Header, (Guid)SelectedItem.Tag, true);。这里，正在创建的组的名称、高亮显示的元素的名称（参见图 6-30，第 1 项）和高亮显示元素的 GUID 作为参数传递。调用中的第四个参数表示我们正在处理逻辑项目树，并且项目项应在其中找到。
+通过该实例，调用方法 ProjectServiceProvider.CreateNewGroup(newGroupName, (string)SelectedItem.Header, (Guid)SelectedItem.Tag, true);。这里，正在创建的组的名称、高亮显示的元素的名称（参见图[图 6-30](#fig-6-30)，第 1 项）和高亮显示元素的 GUID 作为参数传递。调用中的第四个参数表示我们正在处理逻辑项目树，并且项目项应在其中找到。
 
 使用这些信息找到项目项，并进行 var parentProjectItem = GetProjectItem(parentGroup, tag, logicalTree); 调用。
 
@@ -524,13 +559,14 @@ if (parentProjectItem != null)
 
 
 图6-31
+
 ![](images/6-31.jpg){ #fig-6-31 }
 
 #### 6.10.2.1 打开编辑器
 
 "项目 -> TIA Portal 编辑器"菜单中的"打开编辑器"让您可以为项目树中高亮显示的元素在 TIA Portal 中打开相应的硬件编辑器，然后在此编辑项目项。
 
-根据序列图（参见图 6-7），通过 ModuleProvider 在类 BaseProjectViewModel 的方法 InitProjectServiceProvider 中加载服务实例：
+根据序列图（参见图[图 6-7](#fig-6-7)），通过 ModuleProvider 在类 BaseProjectViewModel 的方法 InitProjectServiceProvider 中加载服务实例：
 
 ```csharp
 ProjectServiceProvider =
@@ -570,7 +606,7 @@ if (projectItem != null)
 
 "项目 -> TIA Portal 编辑器"菜单中的"拓扑视图"让您可以打开 TIA Portal 中项目的拓扑视图（参见[图 6-32](#fig-6-32)）。
 
-根据序列图（参见图 6-7），通过 ModuleProvider 在类 BaseProjectViewModel 的方法 InitProjectServiceProvider 中加载服务实例：
+根据序列图（参见图[图 6-7](#fig-6-7)），通过 ModuleProvider 在类 BaseProjectViewModel 的方法 InitProjectServiceProvider 中加载服务实例：
 
 ```csharp
 ProjectServiceProvider =
@@ -589,13 +625,14 @@ CurrentProject.ShowHwEditor(viewType);
 
 
 图6-32
+
 ![](images/6-32.jpg){ #fig-6-32 }
 
 #### 6.10.2.3 网络视图
 
 "项目 -> TIA Portal 编辑器"菜单中的"网络视图"让您可以打开 TIA Portal 中项目的网络视图（参见[图 6-33](#fig-6-33)）。
 
-根据序列图（参见图 6-7），通过 ModuleProvider 在类 BaseProjectViewModel 的方法 InitProjectServiceProvider 中加载服务实例：
+根据序列图（参见图[图 6-7](#fig-6-7)），通过 ModuleProvider 在类 BaseProjectViewModel 的方法 InitProjectServiceProvider 中加载服务实例：
 
 ```csharp
 ProjectServiceProvider =
@@ -613,16 +650,18 @@ CurrentProject.ShowHwEditor(viewType);
 ```
 
 图6-33
+
 ![](images/6-33.jpg){ #fig-6-33 }
 
 ### 6.10.3 编译
 
 图6-34
+
 ![](images/6-34.jpg){ #fig-6-34 }
 
 编译项目树中高亮显示的元素，只要该对象实现了接口 ICompilable（参见[图 6-34](#fig-6-34)）。
 
-根据序列图（参见图 6-7），通过 ModuleProvider 在类 BaseProjectViewModel 的方法 InitProjectServiceProvider 中加载服务实例：
+根据序列图（参见图[图 6-7](#fig-6-7)），通过 ModuleProvider 在类 BaseProjectViewModel 的方法 InitProjectServiceProvider 中加载服务实例：
 
 ```csharp
 ProjectServiceProvider =
@@ -667,6 +706,7 @@ if (projectItem != null)
 ### 6.10.4 "导入/导出" 子菜单
 
 图6-35
+
 ![](images/6-35.jpg){ #fig-6-35 }
 
 #### 6.10.4.1 CAx 导入
@@ -675,6 +715,7 @@ CAx 导入用于以 AML 格式导入设备数据。支持以下导入选项。
 
 
 图6-36
+
 ![alt text](images/image-30.png){ #fig-6-36 }
 
 
@@ -703,6 +744,7 @@ if (CurrentProject != null)
 
 
 图6-37
+
 ![](images/6-37.jpg){ #fig-6-37 }
 
 CAx 导出以 AML 格式导出设备数据。CAx 导出在项目级别或设备级别都是可能的。
@@ -722,8 +764,9 @@ if (CurrentProject != null)
 
 #### 6.10.4.3 将元素导入为 Simatic ML
 
+图6-38
 
-![alt text](images/image-31.png)
+![alt text](images/image-31.png){ #fig-6-38 }
 
 表 6-17
 
@@ -735,11 +778,12 @@ if (CurrentProject != null)
 | 4. | 确认导入数据并调用函数。 |
 
 
-图6-38
+
 图6-39
+
 ![](images/6-39.jpg){ #fig-6-39 }
 
-根据序列图（参见图 6-7），通过 ModuleProvider 在类 BaseProjectViewModel 的方法 InitProjectServiceProvider 中加载服务实例：
+根据序列图（参见图[图 6-7](#fig-6-7)），通过 ModuleProvider 在类 BaseProjectViewModel 的方法 InitProjectServiceProvider 中加载服务实例：
 
 ```csharp
 ProjectServiceProvider =
@@ -757,8 +801,9 @@ LogicalTreeView);
 
 #### 6.10.4.4 将结构导入为 Simatic ML
 
+图6-40
 
-![alt text](images/image-32.png)
+![alt text](images/image-32.png){ #fig-6-40 }
 
 表 6-18
 
@@ -772,13 +817,18 @@ LogicalTreeView);
 
 
 
-图6-40
+
+
 图6-41
+
 ![](images/6-41.jpg){ #fig-6-41 }
 
-![](images/6-42.jpg)
 
-根据序列图（参见图 6-7），通过 ModuleProvider 在类 BaseProjectViewModel 的方法 InitProjectServiceProvider 中加载服务实例：
+图6-42
+
+![](images/6-42.jpg){ #fig-6-42 }
+
+根据序列图（参见图[图 6-7](#fig-6-7)），通过 ModuleProvider 在类 BaseProjectViewModel 的方法 InitProjectServiceProvider 中加载服务实例：
 
 ```csharp
 ProjectServiceProvider =
@@ -833,6 +883,7 @@ using (var exclusiveAccess = tiaPortal?.ExclusiveAccess("Import element"))
 
 
 图6-43
+
 ![alt text](images/image-33.png){ #fig-6-43 }
 
 表 6-19
@@ -842,7 +893,7 @@ using (var exclusiveAccess = tiaPortal?.ExclusiveAccess("Import element"))
 | 1. | 将作为结构导出的区域高亮显示。 |
 | 2. | 通过菜单"项目 > 导入/导出 > 将结构导出为 SimaticML"或工具栏启动导出。 |
 
-根据序列图（参见图 6-7），通过 ModuleProvider 在类 BaseProjectViewModel 的方法 InitProjectServiceProvider 中加载服务实例：
+根据序列图（参见图[图 6-7](#fig-6-7)），通过 ModuleProvider 在类 BaseProjectViewModel 的方法 InitProjectServiceProvider 中加载服务实例：
 
 ```csharp
 ProjectServiceProvider =
@@ -864,11 +915,14 @@ ProjectServiceProvider.ExportStructureAsync((string)SelectedItem.Header, (Guid)S
 
 
 图6-44
+
 ![](images/6-44.jpg){ #fig-6-44 }
 
-![](images/6-45.jpg)
+图6-45
 
-根据序列图（参见图 6-7），通过 ModuleProvider 在类 BaseProjectViewModel 的方法 InitProjectServiceProvider 中加载服务实例：
+![](images/6-45.jpg){ #fig-6-45 }
+
+根据序列图（参见图[图 6-7](#fig-6-7)），通过 ModuleProvider 在类 BaseProjectViewModel 的方法 InitProjectServiceProvider 中加载服务实例：
 
 ```csharp
 ProjectServiceProvider =
@@ -917,9 +971,11 @@ plcExternalSourceGroup.ExternalSources.CreateFromFile(Path.GetFileName(externalS
 
 ### 6.11.2 从外部源生成块
 
-![alt text](images/image-34.png)
+图6-46
 
-根据序列图（参见图 6-7），通过 ModuleProvider 在类 BaseProjectViewModel 的方法 InitProjectServiceProvider 中加载服务实例：
+![alt text](images/image-34.png){ #fig-6-46 }
+
+根据序列图（参见图[图 6-7](#fig-6-7)），通过 ModuleProvider 在类 BaseProjectViewModel 的方法 InitProjectServiceProvider 中加载服务实例：
 
 ```csharp
 ProjectServiceProvider =
@@ -929,7 +985,7 @@ IProjectServiceProvider;
 
 在 BaseProjectViewModel 类中，调用方法 GenerateBlockFromSource，其中在服务实例上执行调用 ProjectServiceProvider.GenerateBlockFromSourceAsync((string)SelectedItem.Header, (Guid)SelectedItem.Tag, LogicalTreeView);。
 
-项目树中高亮显示的元素的名称和 GUID（参见图 6-46，第 1 项），以及有关使用逻辑还是物理项目树的信息，用于搜索项目项。
+项目树中高亮显示的元素的名称和 GUID（参见图[图 6-46](#fig-6-46)，第 1 项），以及有关使用逻辑还是物理项目树的信息，用于搜索项目项。
 
 ```csharp
 var projectItem = GetProjectItem(header, tag, logical);
@@ -981,13 +1037,16 @@ END_DATA_BLOCK
 ```
 | 2. | 从源文件生成目标块。 |
 
-图6-46
+
 图6-47
+
 ![alt text](images/image-35.png){ #fig-6-47 }
 
-目标块是从源文件生成的（另参见图 6-47，第 1 项）。外部源中的类型（参见表 6-20，第 1 项）被分配给相应的区域（参见图 6-47，第 2 和第 3 项）。
+目标块是从源文件生成的（另参见图[图 6-47](#fig-6-47)，第 1 项）。外部源中的类型（参见表 6-20，第 1 项）被分配给相应的区域（参见图[图 6-47](#fig-6-47)，第 2 和第 3 项）。
 
 ### 6.11.3 从块生成源
+
+图6-48
 
 ![](images/6-48.jpg){ #fig-6-48 }
 
@@ -995,7 +1054,7 @@ END_DATA_BLOCK
 
 首先打开"保存文件"对话框（参见[图 6-49](#fig-6-49)）。这里，根据高亮显示的元素，您可以选择文件类型 *.awl、*.scl、*.db 或 *.udt 并输入文件名。
 
-根据序列图（参见图 6-8），通过 ModuleProvider 在类 BaseProjectViewModel 的方法 InitProjectServiceProvider 中加载服务实例：
+根据序列图（参见图[图 6-8](#fig-6-8)），通过 ModuleProvider 在类 BaseProjectViewModel 的方法 InitProjectServiceProvider 中加载服务实例：
 
 ```csharp
 ProjectServiceProvider =
@@ -1045,8 +1104,10 @@ if (blockAsSource is PlcType plcType)
   plcSoftware.ExternalSourceGroup.GenerateSource(new[] { plcType }, destinationFileInfo);
 }
 ```
-图6-48
+
+
 图6-49
+
 ![](images/6-49.jpg){ #fig-6-49 }
 
 ## 6.12 "选项"菜单
