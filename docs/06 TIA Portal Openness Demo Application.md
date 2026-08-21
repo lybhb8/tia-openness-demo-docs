@@ -1029,36 +1029,43 @@ if (projectItem != null)
 
 | 编号 | 说明 |
 |------|------|
-| 1. | 类型为"外部源文件"的高亮显示项目项，将从中生成块。例如，外部源 DB_Engine 包含一个类型和一个数据块。 |
-
-```text
-TYPE "Motor"
-VERSION : 0.1
-STRUCT
-  Start : Bool;
-  Stop : Bool;
-  Temperature : Real;
-  RPM : Real;
-  State : Bool;
-END_STRUCT;
-END_TYPE
-DATA_BLOCK "DB_Engine"
-{ DB_Accessible_From_OPC_UA := 'FALSE' ;
-  DB_Accessible_From_Webserver := 'FALSE' ;
-  S7_Optimized_Access := 'TRUE' }
-VERSION : 0.1
-NON_RETAIN
-VAR
-  Motor_1 : "Motor";
-  Motor_2 : "Motor";
-  Motor_3 : "Motor";
-  Motor_4 : "Motor";
-END_VAR
-BEGIN
-END_DATA_BLOCK
-```
+| 1. | 类型为"外部源文件"的高亮显示项目项，将从中生成块。例如，外部源 DB_Engine 包含一个类型和一个数据块。![alt text](image.png)|
 | 2. | 从源文件生成目标块。 |
 
+数据块:
+
+```text
+
+TYPE "Motor" 
+  VERSION : 0.1 
+    STRUCT 
+      Start : Bool; 
+      Stop : Bool; 
+      Temperature : Real; 
+      RPM : Real; 
+      State : Bool; 
+    END_STRUCT; 
+END_TYPE 
+
+    
+DATA_BLOCK "DB_Engine" 
+  { DB_Accessible_From_OPC_UA := 'FALSE' ; 
+    DB_Accessible_From_Webserver := 'FALSE' ; 
+    S7_Optimized_Access := 'TRUE' } 
+  VERSION : 0.1 
+  NON_RETAIN 
+
+    VAR  
+    Motor_1 : "Motor"; 
+    Motor_2 : "Motor"; 
+    Motor_3 : "Motor"; 
+    Motor_4 : "Motor"; 
+    END_VAR 
+  BEGIN 
+END_DATA_BLOCK
+
+
+```
 
 图6-47
 
@@ -1144,6 +1151,7 @@ if (blockAsSource is PlcType plcType)
 ### 6.12.1 设置
 
 图6-51
+
 ![alt text](images/image-36.png){ #fig-6-51 }
 
 
@@ -1175,14 +1183,15 @@ if (blockAsSource is PlcType plcType)
 ## 6.13 "帮助"菜单
 
 图6-52
+
 ![](images/6-53.jpg){ #fig-6-52 }
 
 
 ### 6.13.1 关于 TIA Portal Openness Demo
 
 图6-53
-![](images/6-52.jpg){ #fig-6-53 }
 
+![alt text](./images/image6-53.png){ #fig-6-53 }
 
 表 6-22
 
